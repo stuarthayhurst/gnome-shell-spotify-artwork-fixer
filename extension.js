@@ -18,14 +18,32 @@
 
 /* exported init */
 
+const Mpris = imports.ui.mpris;
+
+const BAD_URL_RX = /^https:\/\/open.spotify.com\//;
+const GOOD_URL    = "https://i.scdn.co/";
+
 class Extension {
     constructor() {
     }
 
     enable() {
+        if (this._originalUpdate === undefined) {
+            let originalUpdate = this._originalUpdate = Mpris.MediaMessage.prototype["_update"];
+            Mpris.MediaMessage.prototype["_update"] = function() {
+                if (this._player._trackCoverUrl) {
+                    this._player._trackCoverUrl = this._player._trackCoverUrl.replace(BAD_URL_RX, GOOD_URL);
+                }
+                originalUpdate.call(this);
+            }
+        }
     }
 
     disable() {
+        if (this._originalUpdate !== undefined) {
+            Mpris.MediaMessage.prototype["_update"] = this._originalUpdate;
+            this_originalUpdate = undefined;
+        }
     }
 }
 
