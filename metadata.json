@@ -1,0 +1,8 @@
+{
+  "name": "Spotify Artwork Fixer",
+  "description": "Fix Spotify artwork in media notification",
+  "uuid": "spotify-artwork-fixer@wjt.me.uk",
+  "shell-version": [
+    "3.38"
+  ]
+}
