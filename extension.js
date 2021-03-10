@@ -42,7 +42,7 @@ class Extension {
     disable() {
         if (this._originalUpdate !== undefined) {
             Mpris.MediaMessage.prototype["_update"] = this._originalUpdate;
-            this_originalUpdate = undefined;
+            this._originalUpdate = undefined;
         }
     }
 }
