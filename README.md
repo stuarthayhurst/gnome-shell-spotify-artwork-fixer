@@ -15,8 +15,9 @@
 ## Installing:
  - The extension can be installed [here](https://extensions.gnome.org/extension/4055/spotify-artwork-fixer/)
  - Alternatively, it can be built and installed from source:
-   - `gnome-extensions pack --force`
-   - `gnome-extensions install spotify-artwork-fixer@wjt.me.uk.shell-extension.zip --force`
+   - `make build`
+   - `make install`
+ - The extension can be uninstalled using `make uninstall`
 
 ## Technical details:
  - The URLs Spotify gives for track artwork in its MPRIS D-Bus messages appear to
