@@ -3,10 +3,10 @@
  - Get the extension from [here](https://extensions.gnome.org/extension/4055/spotify-artwork-fixer/)
 
 ## Before:
-!["Now Playing" notification without artwork](./gnome-spotify-without-artwork.png)
+!["Now Playing" notification without artwork](./docs/gnome-spotify-without-artwork.png)
 
 ## After:
-!["Now Playing" notification with artwork](./gnome-spotify-with-artwork.png)
+!["Now Playing" notification with artwork](./docs/gnome-spotify-with-artwork.png)
 
 ## Missing album art after installation
  - This is most likely due to a bug in GNOME Shell
