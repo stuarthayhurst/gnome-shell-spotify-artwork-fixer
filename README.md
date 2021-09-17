@@ -1,6 +1,8 @@
 ## gnome-shell-spotify-artwork-fixer
  - This extension works around a bug in [Spotify for Linux](https://www.spotify.com/us/download/linux/) where the album art was missing from the notification
  - Get the extension from [here](https://extensions.gnome.org/extension/4055/spotify-artwork-fixer/)
+ - **Attention: this extension isn't needed on Spotify v1.1.68, as the problem is fixed upstream**
+   - Because of this, the extension won't be as actively maintained, and may be archived
 
 ## Before:
 !["Now Playing" notification without artwork](./docs/gnome-spotify-without-artwork.png)
